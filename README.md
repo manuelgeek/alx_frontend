@@ -1,4 +1,6 @@
-# Quasar App (alx-quaser)
+# ALX Front End App
+
+> Built with Quasar CLI and tailwind CSS
 
 A Quasar Framework app
 
