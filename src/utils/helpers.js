@@ -5,4 +5,7 @@ export default {
       data[key] = '';
     });
   },
+  numberToString(num) {
+    return Number(num).toLocaleString('en');
+  },
 };

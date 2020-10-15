@@ -1,7 +1,7 @@
 <template>
   <q-page class="tw-w-full flex flex-center flex-wrap">
     <div class="tw-w-full tw-flex tw-flex-wrap">
-      <div class="tw-w-full">
+      <div class="tw-w-full tw-mt-3 md:tw-mt-10">
         <h2 class="tw-text-3xl text-primary tw-font-bold">The jokes</h2>
         <hr>
       </div>
