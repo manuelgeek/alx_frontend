@@ -82,7 +82,17 @@ module.exports = function (/* ctx */) {
     devServer: {
       https: false,
       port: 8080,
-      open: true, // opens browser window automatically
+      open: false, // opens browser window automatically
+      proxy: {
+        // proxy all requests starting with /api to jsonplaceholder
+        '/api1': {
+          target: 'https://official-joke-api.appspot.com',
+          changeOrigin: true,
+          pathRewrite: {
+            '^/api1': '',
+          },
+        },
+      },
     },
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework

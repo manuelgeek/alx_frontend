@@ -1,10 +1,13 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="lHh Lpr lFf" class="tw-bg-gray-200">
     <q-header elevated class="tw-px-4 md:tw-px-10">
       <q-toolbar>
         <q-toolbar-title>
-          Quasar App
+          ALX App
         </q-toolbar-title>
+
+        <q-btn stretch flat label="Link" />
+        <q-btn stretch flat label="Link" />
 
         <q-btn-dropdown v-if="$store.getters['user/isAuthenticated']" stretch flat>
           <template #label>
