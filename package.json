@@ -2,7 +2,7 @@
   "name": "alx-quaser",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "productName": "ALX App",
   "author": "Magak Emmanuel <emashmagak@gmail.com>",
   "private": true,
   "scripts": {

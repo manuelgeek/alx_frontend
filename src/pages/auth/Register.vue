@@ -75,7 +75,7 @@
           </q-field>
 
           <div class="flex justify-center">
-            <q-btn label="Register" type="submit" color="primary" :loading="loading"/>
+            <q-btn id="register" label="Register" type="submit" color="primary" :loading="loading"/>
           </div>
 
           <q-card-actions class="tw-w-full tw-flex justify-center">
