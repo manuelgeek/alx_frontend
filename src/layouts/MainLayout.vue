@@ -6,12 +6,12 @@
           ALX App
         </q-toolbar-title>
 
-        <q-btn stretch flat label="Link" />
-        <q-btn stretch flat label="Link" />
+        <q-btn stretch :to="{name: 'Index'}" flat label="Home" />
+        <q-btn stretch :to="{name: 'Anims'}" flat label="Anims" />
 
         <q-btn-dropdown v-if="$store.getters['user/isAuthenticated']" stretch flat>
           <template #label>
-            <p class="tw-px-2 tw-capitalize">{{ user.name }}</p>
+            <p class="tw-px-2 tw-capitalize tw-hidden lg:tw-block">{{ user.name }}</p>
             <q-avatar color="white" text-color="primary">{{ user.name | abbreviate}}</q-avatar>
           </template>
           <q-list>

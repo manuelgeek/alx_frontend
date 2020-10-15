@@ -18,7 +18,9 @@
               <p class="tw-px-2 tw-py-3 tw-bg-blue-100 tw-rounded">{{ joke.punchline }}</p>
             </q-card-section>
             <q-card-section class="tw-w-full tw-flex tw-justify-end tw-flex-1">
-              <div class="text-subtitle2"><q-badge outline color="primary" label="#general" /></div>
+              <div class="text-subtitle2">
+                <q-badge outline color="primary" :label="`#${joke.type}`" />
+              </div>
             </q-card-section>
           </q-card>
         </div>

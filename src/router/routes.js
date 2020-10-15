@@ -23,6 +23,7 @@ const routes = [
     beforeEnter: ifAuthenticated,
     children: [
       { path: '', name: 'Index', component: () => import('pages/Index.vue') },
+      { path: 'anims', name: 'Anims', component: () => import('pages/Anims') },
     ],
   },
   {
