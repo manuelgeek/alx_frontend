@@ -1,6 +1,9 @@
 <template>
   <q-page class="flex flex-center flex-wrap tw-content-center">
     <div class="tw-w-full text-center">
+      <div class="tw-flex tw-flex-no-wrap tw-justify-center">
+        <img width="80" src="/icons/favicon-128x128.png" alt="logo">
+      </div>
       <h1 class="text-primary tw-text-4xl">ALX Front End</h1>
     </div>
     <div class="tw-w-full md:tw-w-1/2 lg:tw-w-1/3">
@@ -40,7 +43,7 @@
           </div>
 
           <div class="flex justify-center">
-            <q-btn label="Login" type="submit" color="primary" :loading="loading"/>
+            <q-btn id="submit" label="Login" type="submit" color="primary" :loading="loading"/>
           </div>
 
           <q-card-actions class="tw-w-full tw-flex justify-center">

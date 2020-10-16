@@ -110,10 +110,10 @@ export default {
   },
 
   methods: {
-    onSubmit() {
+    async onSubmit() {
       this.loading = true;
       this.validateErrors = [];
-      this.$axios.post('/register', this.form)
+      await this.$axios.post('/register', this.form)
         .then((response) => {
           this.$store
             .dispatch('user/loginUser', response.data).then(() => {

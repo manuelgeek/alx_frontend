@@ -1,3 +1,4 @@
+import NoInternet from 'pages/auth/errors/NoInternet';
 import store from '../store';
 
 const ifNotAuthenticated = (_to, _from, next) => {
@@ -39,9 +40,19 @@ const routes = [
   // Always leave this as last one,
   // but you can also remove it
   {
+    name: 'server-error',
+    path: '/error',
+    component: () => import('pages/auth/errors/Error50x'),
+  },
+  {
+    name: 'no-internet',
+    path: '/offline',
+    component: NoInternet,
+  },
+  {
     name: 'not-found',
     path: '*',
-    component: () => import('pages/Error404.vue'),
+    component: () => import('pages/auth/errors/Error404.vue'),
   },
 ];
 

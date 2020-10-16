@@ -32,7 +32,7 @@ export default async ({ router, store }) => {
         });
       }
       if (error.response.status === 500 || error.response.status === 502) {
-        // router.push({ name: 'server-error' });
+        router.push({ name: 'server-error' });
       }
       if (error.response.status === 404) {
         router.push({ name: 'not-found' });
@@ -45,11 +45,11 @@ export default async ({ router, store }) => {
       * of http.ClientRequest in Node.js
       */
       // console.log(error.request);
-      // router.push({ name: 'no-internet' });
+      router.push({ name: 'no-internet' });
     } else {
       // * Something happened in setting up the request and triggered an Error
       // console.log('Error', error.message);
-      // router.push({name: 'no-internet'});
+      router.push({ name: 'no-internet' });
     }
     // console.log(error);
     return Promise.reject(error);
