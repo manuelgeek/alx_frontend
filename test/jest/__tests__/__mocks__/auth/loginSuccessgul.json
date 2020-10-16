@@ -1,0 +1,12 @@
+{
+  "message": "Login successfull",
+  "token": "3|BB54L8Fk0IXVpkvvYExERUGGK5C6eguSnD92dHMa",
+  "user": {
+    "id": 3,
+    "name": "ALX APP",
+    "email": "user@mail.com",
+    "email_verified_at": "2020-10-12T18:06:53.000000Z",
+    "created_at": "2020-10-12T18:06:53.000000Z",
+    "updated_at": "2020-10-12T18:06:53.000000Z"
+  }
+}

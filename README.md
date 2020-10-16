@@ -2,7 +2,6 @@
 
 > Built with Quasar CLI and tailwind CSS
 
-A Quasar Framework app
 
 ## Install the dependencies
 ```bash

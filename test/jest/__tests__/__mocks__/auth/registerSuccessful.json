@@ -1,0 +1,11 @@
+{
+  "message": "Registration Successful",
+  "token": "1|L8oP5VcAKiOw7mmal0SooEOVtLrotmT7ZSoQDnHu",
+  "user": {
+    "name": "ALX APP",
+    "email": "mail@mail.com",
+    "updated_at": "2020-10-12T17:59:35.000000Z",
+    "created_at": "2020-10-12T17:59:35.000000Z",
+    "id": 1
+  }
+}
